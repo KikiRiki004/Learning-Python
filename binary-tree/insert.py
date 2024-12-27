@@ -10,7 +10,7 @@ def insert(root, newValue):
     if root is None:
         root = BinaryTreeNode(newValue)
         return root
-    # if newValue is less than value of data in root, add it to left subtree and proceed recursively
+    # if newValue is less than value of data in root, add it to left subtree then proceed recursively
     if newValue < root.data:
         root.leftChild = insert(root.leftChild, newValue)
     else:
